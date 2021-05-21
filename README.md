@@ -1,2 +1,8 @@
 # SMCpp_HDGP
-# SMCpp_HDGP
+
+La récente explosion des méthodes de séquençage de l'ADN a permis de constituer des bases de données contenant le génome de millier d'individus, rendant possible l'étude de ce génome à l'échelle de populations. L'impact des changements démographiques sur ces données étant un processus bien connu, il est possible de l'inverser afin d'inférer des paramètres démographiques tel que les événements de métissage, la structure des populations ou encore l'évolution de leur nombre d'individus. Dans ce projet, nous cherchons à évaluer la méthode SMC++ afin de la comparer aux méthodes Deep Learning pour la génétique des populations développées par le labo. Cette méthode, basée sur les méthodes de Monte-Carlo par chaînes de Markov, est très souvent utilisée pour l'inférence des tailles de populations à partir de données ADN, mais il n'existe pour l'instant aucun comparatif aux méthodes Deep Learning sur les mêmes données. 
+
+Le projet se divise en trois étapes : 
+La première consiste à développer un parser permettant de convertir les données utilisées par les méthodes Deep Learning en données utilisables par SMC++. Pour cela, il faut se référer à la documentation de SMC++ (github.com/popgenmethods/smcpp#id25) et bien comprendre les spécificités du jeu de données. 
+La deuxième étape est le développement du pipeline permettant de passer les données à SMC++, de récupérer et d'évaluer les résultats. Cette étape se fera dans sur un sous-échantillon du jeu de données complet. 
+Enfin, la dernière étape est d'appliquer la méthode au jeu de données complet et d'effectuer une recherche des meilleurs hyperparamètres.
